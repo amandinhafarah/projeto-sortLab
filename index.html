@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>SortLab - Precisão e Sorte em um Só Lugar</title>
+  </head>
+  <body>
+    <main class="layout">
+      <div class="logo-container">
+        <img src="assets/logo1.jpg" alt="SortLab Logo" />
+      </div>
+
+      <div class="linha"></div>
+
+      <section class="conteudo">
+        <section class="b">
+          <h1>Sorteador de Números</h1>
+
+          <p>Sorteie um número entre:</p>
+
+          <div class="inputs">
+            <label>
+              <input type="number" class="input-min" placeholder="0" />
+            </label>
+
+            <label>
+              <input type="number" class="input-max" placeholder="100" />
+            </label>
+          </div>
+          <button class="sortear">Sortear</button>
+
+          <div class="resultado">
+            <h2>Resultado</h2>
+            <p class="result-screen"></p>
+          </div>
+
+        </section>
+      </section>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

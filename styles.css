@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00B894;
+    --secondary-color: #1A1A1D;
+    --tertiary-color: #F8F9FA;
+    --quaternary-color: #34495E;
+    --font-family: "Cairo", sans-serif;
+}
+
+body {
+    background-color: #03060b;
+    font-family: var(--font-family);
+    color: var(--tertiary-color);
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.logo-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.logo-container img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.linha {
+    border-left: 1px solid var(--primary-color);
+    position: fixed;
+    left: 25%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0 10px 0;
+
+    }
+}
+
+.b {
+    background-color: #f8f9fae8;
+    color: #03060b;
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+    width: 430px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputs input {
+    width: 160px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--quaternary-color);
+}
+
+
+button {
+    font-size: 20px;
+    background-color: #00B894;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 342px;
+    height: 50px;
+    padding: 5px 10px;
+    margin: 30px auto 0;
+}
+
+button:hover, button:active {
+    background-color: #0d5f4f;
+    transition: 0.4s ease;
+}
+
+.resultado {
+    background-color: #F8F9FA;
+    color: #03060b;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid var(--quaternary-color);
+    width: 342px;
+    height: 100px;
+    border-radius: 10px;
+}
